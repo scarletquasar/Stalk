@@ -7,7 +7,7 @@ namespace Stalk
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             WindowsIdentity identity = WindowsIdentity.GetCurrent();
             WindowsPrincipal principal = new WindowsPrincipal(identity);
