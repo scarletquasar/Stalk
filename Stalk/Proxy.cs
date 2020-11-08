@@ -47,7 +47,12 @@ namespace Stalk
 
         private void EnsureRootCertificate()
         {
-            proxy.CertificateManager.CreateRootCertificate();
+            proxy.CertificateManager.LoadRootCertificate();
+
+            if (proxy.CertificateManager.RootCertificate == null)
+            {
+                proxy.CertificateManager.CreateRootCertificate();
+            }
 
             X509Store store = new X509Store(StoreName.Root, StoreLocation.LocalMachine);
             X509Certificate2 certificate = new X509Certificate2(
