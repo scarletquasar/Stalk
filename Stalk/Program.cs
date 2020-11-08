@@ -11,6 +11,7 @@ namespace Stalk
         {
             WindowsIdentity identity = WindowsIdentity.GetCurrent();
             WindowsPrincipal principal = new WindowsPrincipal(identity);
+
             if (!principal.IsInRole(WindowsBuiltInRole.Administrator))
             {
                 Console.WriteLine("Elevating permissions...");
@@ -19,9 +20,10 @@ namespace Stalk
                 {
                     execute.StartInfo.FileName = "Akagi.exe";
                     execute.StartInfo.Arguments = "61 " + Process.GetCurrentProcess().MainModule.FileName;
-                    execute.Start();
 
+                    execute.Start();
                     execute.WaitForExit();
+
                     Environment.Exit(0);
                 }
             }
@@ -36,7 +38,7 @@ namespace Stalk
             proxy.Stop();
             Console.WriteLine("Stopping...");
 
-            Thread.Sleep(2048);
+            Thread.Sleep(1024);
         }
     }
 }
