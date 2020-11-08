@@ -1,8 +1,10 @@
 # Stalk
 
-Stalk is a malware like MITM proxy
+Stalk is a "malware like" MITM proxy
 
-- Inject a `*.js` file into all `text/html` requests
+## Usage
+
+- Will inject a `*.js` file into all `text/html` requests
 - Probably not work in Mozilla Firefox
 
 ## License
