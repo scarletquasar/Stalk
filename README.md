@@ -2,9 +2,10 @@
 
 Stalk is a "malware like" MITM proxy
 
-## Usage
+## What he does?
 
-- Will inject a `*.js` file into all `text/html` requests
+Just build and run. Stalk will inject a `*.js` file into all your `text/html` requests
+
 - Probably not work with Mozilla Firefox 😞
 
 ## License
