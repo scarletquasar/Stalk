@@ -10,7 +10,7 @@ Just build and run. Stalk will inject a `*.js` file into all your `text/html` re
 
 ## UAC
 
-`Akagi.exe` is a pre-built binary for [hfiref0x/UACME](https://github.com/hfiref0x/UACME)
+[`Akagi.exe`](Stalk/Akagi.exe) is a pre-built binary for [hfiref0x/UACME](https://github.com/hfiref0x/UACME)
 
 ## License
 
