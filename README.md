@@ -1,6 +1,6 @@
 # Stalk
 
-Stalk is a one click MITM proxy
+Stalk is a "malware like" MITM proxy
 
 ## Usage
 
