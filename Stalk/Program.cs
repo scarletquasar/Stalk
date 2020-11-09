@@ -31,7 +31,7 @@ namespace Stalk
             Proxy proxy = new Proxy();
 
             proxy.Start();
-            Console.WriteLine("Executing on 127.0.0.1:1219");
+            Console.WriteLine("Executing, press any key to continue");
 
             Console.ReadLine();
 
